@@ -1,0 +1,21 @@
+1a.  Given a sorted list 3, 5, 6, 8, 11, 12, 14, 15, 17, 18 and using the recursive binary search algorithm, identify the sequence of numbers that each recursive call will search to try and find 8.
+
+    -   Start at the halfway point of 11
+    -   11 > 8 so end index is set to [3]   
+    -   checks value of 5
+    -   5 < 8 so start index is set to [2]
+    -   checks value of 6
+    -   6 < 8 so start index is set to [3]
+    -   checks value of 8
+    -   8 === 8 so algorithm returns index [3]
+
+1b. Given a sorted list 3, 5, 6, 8, 11, 12, 14, 15, 17, 18 and using the recursive binary search algorithm, identify the sequence of numbers that each recursive call will search to try and find 16.
+
+    -   start at halfway point of 11
+    -   checks value of 11, 11 < 16 so start index is at [5]
+    -   checks value of 15
+    -   15 < 16 so start index is set at [8]
+    -   checks value of 17
+    -   17 > 16 so end index is set at [7]
+    -   start index > end index so algorithm returns -1
+    
